@@ -2,7 +2,6 @@
 
 #install read xl
 install.packages("readxl")
-install.packages("tibble")
 library(readxl)
 
 #upload dataset - make sure you use double backward slash and all in quotes
