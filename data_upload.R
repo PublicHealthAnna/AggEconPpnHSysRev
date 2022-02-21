@@ -1,4 +1,4 @@
-#uploading data set
+#uploading data sets
 
 #install read xl
 install.packages("readxl")
