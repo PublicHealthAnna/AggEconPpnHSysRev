@@ -1,0 +1,6 @@
+gitcreds::gitcreds_set()
+
+## it should prompt to Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+## -> Adding new credentials...
+## -> Removing credentials from cache...
+## -> Done.
