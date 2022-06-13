@@ -1,5 +1,11 @@
 ### Testing out how to create and save scripts in a branch ###
 
+###install packages
+install.packages("tidyverse")
+install.packages("meta")
+install.packages("metafor")
+
+
 ###Testing out meta-analysis functions and script writing ###
 ### using chapter 4 of https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/pooling-es.html ###
 ##bring the data in ##
