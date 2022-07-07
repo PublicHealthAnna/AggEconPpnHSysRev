@@ -6,6 +6,7 @@ data = example_data_for_effect_dir
 
 data2 = data %>%
   mutate(RoB_overall_rating = factor(RoB_overall_rating, levels = c("WEAK", "MODERATE", "STRONG"))) %>% # factors the RoB so we get an order to RoB
+  mutate(Direction = factor(Direction, levels = c("Improved health leads to increased AEA", "Neither or inconsistent", "Improved health leads to decreased AEA"))) %>% 
   group_by(RoB_overall_rating) %>% # groups the data by the RoB
   arrange(RoB_overall_rating, Direction) %>% # arranges the data in the order of RoB and Direction
   mutate(ymax = n(),  
@@ -33,7 +34,7 @@ ggplot(data2)+
     y= "Number of studies") + 
   theme_classic(base_size=12) +
   theme(
-    legend.position = "bottom",
+    legend.position = "right",
     legend.background=element_blank(),
     legend.box.background = element_rect(colour="black"))
 
