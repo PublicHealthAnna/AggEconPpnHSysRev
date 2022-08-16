@@ -61,7 +61,7 @@ MA_Coefficients <- map(example_data_for_MA,
 
 
 ## get the results 
-summary(m.gen)
+summary(ma.beta.health2aea)
 
 ## This approach can be adapted for our analysis
 ## We would use SMD for recession results 
@@ -70,14 +70,14 @@ summary(m.gen)
 ## The other methods are appropriate (RE, ML, adjustment) 
 
 ## we probably want to save at this point 
-save(m.gen, file = "C:\Users\md1abzz\Documents\SysRev\Synthesis\AggEconPpnHSysRev") # or can we save direct to github?
+save(ma.beta.health2aea, file = "C:\Users\md1abzz\Documents\SysRev\Synthesis\AggEconPpnHSysRev") # or can we save direct to github?
 
 ##access specific bits of data eg pooled effect size
-m.gen$TE.random
+ma.beta.health2aea$TE.random
 
 ##change some of the ways we did the meta analysis to see whether we get diff results for sensitivity analysis
 ## eg change tau squared approach to DerSimonian-Laird (which we probably want to do as a sensitivity analysis)
-m.gen_update <- update.meta(m.gen, 
+m.gen_update <- update.meta(ma.beta.health2aea, 
                             method.tau = "DL")
 
 # Get pooled effect
